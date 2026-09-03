@@ -1,3 +1,13 @@
+> ### ⚠️ This repository is archived
+>
+> This is the **original UndergroundBB implementation** (Node.js + Express + React + PostgreSQL +
+> Redis). It is preserved here for reference and is no longer developed.
+>
+> Development has moved to a ground-up rewrite at
+> **[pwntato/undergroundbb](https://github.com/pwntato/undergroundbb)** — Go on AWS Lambda with a
+> single DynamoDB table, and crypto moved fully client-side so the server only ever stores
+> ciphertext and public keys.
+
 # UndergroundBB
 
 UndergroundBB is a place where people can communicate with each other and know their conversations are safe. All post titles and bodies are fully encrypted such that it requires one of the group's user's password, which aren't stored, even in hash form, on the server end. New users can only be added to a group by users already in the group with a role of Ambassador or Admin, thus providing a chain of trust. The weakest link in the chain is user passwords, so it is recommended to use strong passwords.
